@@ -1,0 +1,294 @@
+/* reseteo*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f3d9ec;
+}
+
+.header {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto; /* Center it */
+  }
+  
+  .header .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    max-width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+
+  }
+
+  h1{
+      font-family: 'pacifico';
+      font-size: 4vw;
+      color: rgb(255, 0, 149);
+      font-weight: lighter;
+  }
+
+  .intro{
+      font-size: 1.5vw;
+  }
+
+  /* Add a black background color to the top navigation */
+  nav{
+      max-width: 100%;
+  }
+.topnav {
+    background-color: rgb(238, 28, 175);
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 1.5vw;
+
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(248, 136, 226);
+    color: black;
+  }
+  
+
+  .refran{
+      width: 90%;
+      font-family: 'pacifico';
+      font-size: 2vw;
+      text-align: center;
+  }
+
+  /* recetas */
+  .tituloReceta{
+       margin: 2vw;
+      font-weight: bolder;
+      font-size: 2vw;
+      text-decoration:underline;
+      filter: drop-shadow(10px 10px 15px blue);
+
+  }
+/* Three columns side by side */
+.columnDesayuno, .columnAlmuerzo, .columnCena {
+    float: left;
+    width: 31%;
+    max-width: 100%;
+    margin-left: 1vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 0 8px;
+   
+  }
+  
+  
+  
+  /* Add some shadows to create a card effect */
+  .cardDesayuno, .cardAlmuerzo, .cardCena {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Some left and right padding inside the container */
+  .containerDesayuno, .containerAlmuerzo, .containerCena {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .containerDesayuno::after, .rowDesayuno::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .containerAlmuerzo::after, .rowAlmuerzo::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .containerCena::after, .rowCena::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+
+  .receta{
+      font-size: 1.5vw;
+      padding: 2vw;
+  }
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerPostre {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    padding: 5vw;
+    border: 1vw double blue;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(233, 175, 175, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 5vw;
+    padding: 8px 12px;
+    position: absolute;
+    top: 60%;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color:  rgba(233, 175, 175, 0.8);
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .peex{
+      font-size: 1.5vw;
+      margin: 2vw;
+      padding: 2vw;
+      text-align: center;
+      border: 1px solid rgb(54, 54, 58);
+      background: #eec9e396;
+  }
+
+  .veroand{
+      font-family: 'pacifico';
+      font-size: 2vw;
+      text-align: right;
+      padding-right: 5vw;
+      color:crimson;
+
+  }
+
+  .const{
+    background: url(/imagenes/const.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: #f3d9ec;
+   
+  }
+  
+ .enconstruccion{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  font-style: oblique;
+  font-size: 2.5vw;
+  margin: 3vw;
+  padding: 3vw;
+ }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+body, .header{
+    max-width: 100%;
+}
+.rowDesayuno{
+    display: flexbox;
+    max-width: 100%;
+   
+}
+.cardDesayuno{
+    max-width: 100%;
+}
+.columnDesayuno, .columnAlmuerzo, .columnCena{
+  width: 100%;
+  display: block;
+}
+img {
+  max-width: 100%;
+
+}
+.topnav{
+  justify-content: space-between;
+  text-align: center;
+}
+.veroand{
+  font-size: 3vw;
+  text-align: right;
+  padding-right: 5vw;
+  color:crimson;
+}
+.receta{
+  font-size: 3vw;
+  padding: 2vw;
+}
+h1{
+  font-size: 5vw;
+  font-weight: lighter;
+}
+
+.intro, .peex, a{
+  font-size: 3vw;
+}
+.tituloReceta{
+  font-size: 3vw;
+
+}
+
+.prev, .next{
+  top: 80%;
+}
+.numbertext{
+  top: 75%;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    
+}
